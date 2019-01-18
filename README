@@ -1,0 +1,9 @@
+# README
+## Asteroid Miner Tycoon
+
+```
+npm install
+npm run build
+```
+
+then drag into nw.js
