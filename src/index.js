@@ -2,6 +2,7 @@ import _ from 'lodash';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import './term.jsx';
 import './style.css';
 
 function component() {
