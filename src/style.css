@@ -3,10 +3,8 @@ html, body {
 }
 
 body {
-  display: flex;
-  align-items: center;
   background: #333;
-  font-family: "PT Sans";
+  font-family: "mono";
   color: #777;
 }
 
@@ -19,8 +17,6 @@ p {
 }
 
 h1 {
-  text-align: center;
-  font-size: 30vh;
   color: #ccc;
   text-shadow: 0 0 3px #000;
   font-weight: bold;

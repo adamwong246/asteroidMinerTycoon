@@ -1,2 +1,3 @@
-import './term.jsx';
+import './terminal/';
+
 import './style.css';
