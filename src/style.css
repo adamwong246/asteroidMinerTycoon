@@ -1,3 +1,68 @@
 .hello {
   color: red;
 }
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  background: #333;
+  font-family: "PT Sans";
+  color: #777;
+}
+
+div {
+  width: 100%;
+}
+
+p {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 30vh;
+  color: #ccc;
+  text-shadow: 0 0 3px #000;
+  font-weight: bold;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.loading-stepped {
+  animation: loading-stepped 0.75s linear infinite;
+}
+
+@keyframes loading-stepped {
+  0%,
+  16% {
+    transform: rotate(45deg);
+  }
+  17%,
+  33% {
+    transform: rotate(180deg);
+  }
+  34%,
+  50% {
+    transform: rotate(235deg);
+  }
+  51%,
+  67% {
+    transform: rotate(270deg);
+  }
+  68%,
+  82% {
+    transform: rotate(315deg);
+  }
+  83%,
+  100% {
+    transform: rotate(360deg);
+  }
+}
