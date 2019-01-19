@@ -84,7 +84,7 @@ Y88b. 888    Y8b.    Y8b.
 }
 
 const startupMessages = [
-  {content: 'Get started by typing *help*\nOr you can try typing *tree*. >:)', type: 'message'}
+  {content: `Welcome to FoOnix 1.0.`, type: 'message'}
 ]
 
 class TerminalApp extends React.Component {
@@ -335,7 +335,12 @@ function encodeHTML(s) {
     return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
 }
 
+let element = document.createElement('div');
+element.id ='demoContainer';
+document.body.appendChild(element);
+
 ReactDOM.render(
 	<TerminalApp startupMessages={startupMessages} />, 
-	document.body
+	document.getElementById('demoContainer')
 );
+

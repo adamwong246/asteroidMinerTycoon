@@ -3,7 +3,17 @@
 
 ```
 npm install
-npm run build
 ```
 
+then 
+```
+npm run start
+```
+or 
+```
+npm run build
+```
+and
 then drag into nw.js
+
+
