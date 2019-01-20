@@ -1,1 +1,1 @@
-export default interface Message { content: string; type: string; }
+export default interface MESSAGE { content: string; type: string; }

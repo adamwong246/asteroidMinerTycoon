@@ -54,6 +54,7 @@ export default class TerminalApp extends React.Component<
 
   doCommand(cmd: string) {
     const command = Shell(cmd);
+    console.log(command);
     this.addMessages(command.messages);
   }
 
