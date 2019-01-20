@@ -7,11 +7,20 @@ import TerminalCommand from './components/command';
 import TerminalInput from './components/input';
 
 const validCmd = {
-  'hello': 'hello world',
   'help': () => {
     return 'Programs: \n- ' + Object.keys(validCmd).join('\n- ');
   },
-  'ls': 'README'
+  'pacman': 'package manager',
+  'email': 'Check your email',
+  'contacts': 'people you know',
+  'classifieds': 'find a job',
+  'HR': 'hire and fire',
+  'stock market': '$$$',
+  'bank': 'more $$$',
+  'kiwifeedia': 'wiki',
+  'awsim': 'simulator',
+  'fablab': 'buy a thing',
+  'sleep': 'wait for a while'
 }
 
 function encodeHTML(s) {
