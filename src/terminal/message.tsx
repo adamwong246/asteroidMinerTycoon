@@ -1,0 +1,1 @@
+export default interface Message { content: string; type: string; }

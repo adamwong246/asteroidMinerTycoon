@@ -8,26 +8,6 @@ body {
   color: #777;
 }
 
-div {
-  width: 100%;
-}
-
-p {
-  text-align: center;
-}
-
-h1 {
-  color: #ccc;
-  text-shadow: 0 0 3px #000;
-  font-weight: bold;
-}
-
-p {
-  margin: 0;
-  padding: 0;
-  text-align: left;
-}
-
 .loading-stepped {
   animation: loading-stepped 0.75s linear infinite;
 }
