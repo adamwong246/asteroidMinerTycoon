@@ -1,5 +1,5 @@
+
 import React from "react";
-import ReactDOM from "react-dom";
 
 import TerminalUI from "./ui.tsx";
 import Shell from "./shell.ts";
@@ -11,9 +11,9 @@ function encodeHTML(s) {
     .replace(/"/g, "&quot;");
 }
 
-export default class TerminalApp extends React.Component<
+class TerminalApp extends React.Component<
   {
-    startupMessages: string[];
+    startupMessages: any[];
   },
   {
     updating: boolean;
@@ -70,3 +70,5 @@ export default class TerminalApp extends React.Component<
     );
   }
 }
+
+export default<TerminalApp startupMessages={[{content: `Welcome to ooonix!`, type: 'message'}]} />
