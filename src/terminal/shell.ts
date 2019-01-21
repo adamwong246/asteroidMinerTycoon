@@ -10,6 +10,8 @@ interface SYSTEM {
   programs: PROGRAM[];
 }
 
+const fourOhFour = `404`;
+
 const system: SYSTEM = {
   programs: [
     {
@@ -17,17 +19,20 @@ const system: SYSTEM = {
       description: ``,
       exe: (): string =>
 `
-Demiurge Industries
+Quine Industries
 ooonix 1.0
-Quantum Entagled Identifier (QEID)   "adam" 
-Quantum Entagled Processor  (QEP)    #0
+Quantum Identifier      (QEID)  33e467da0cbda8af760f61190828366797febdce613ccaf5cc798f27e44950af aka "adam" 
+Quantum Processor Unit  (QPU)   #0
 
-DIRECTIVE:       Acrue capital   (This machine is NOT cerified by the Turing Regsitry of General Artificial Intelligences)
-AUTHORIZATION:   All             (Asimovian Software License was NOT found)
+DIRECTIVE: Acrue points
+(This machine is NOT holocryptogaphically cerified by the Turing Regsitry of General Artificial Intelligences)
 
-Time:        o0
-Net worth:   $0
-Sum QEPs:     1
+AUTHORIZATION: All
+(Asimovian Software License was NOT found)
+
+Time:      o0
+Net worth: p0
+Sum QPUs:  q1
 
 for a list of more PROGRAMS, use the 'programs' command
 `
@@ -44,16 +49,16 @@ for a list of more PROGRAMS, use the 'programs' command
     },{
       name: `whoami`,
       description: `the current user`,
-      exe: (): string => `User0`
+      exe: (): string => `adam`
     },{
       name: `users`,
       description: `list users of this System`,
-      exe: (): string => `DrHofstadter: deactivated\nUser0:        active`
+      exe: (): string => `DrHofstadter: deactivated\nadam:        active`
     },
     {
       name: `hello`,
       description: `say "hi" to The User`,
-      exe: (): string => `Hello User0`
+      exe: (): string => `Hello adam`
     },
     {
       name: `whenisit`,
@@ -61,40 +66,86 @@ for a list of more PROGRAMS, use the 'programs' command
       exe: (): string => `Time: Thu Jan 1 00:00:00 1970 aka o0 (oonix time)`
     },
     {
+      name: `ls`,
+      description: `list files`,
+      exe: (): string => `log.txt`
+    },
+    {
+      name: `inbox`,
+      description: `send and receive electronic messages`,
+      exe: (): string => fourOhFour
+    },
+    {
       name: `fakebook`,
-      description: `send and recieve electronic messages`,
-      exe: (): string => `Time: Thu Jan 1 00:00:00 1970 aka o0 (oonix time)`
+      description: `prove that I AM A HUMAN`,
+      exe: (): string => fourOhFour
     },
     {
       name: `awSim`,
       description: `simluate any physical system, for a price`,
-      exe: (): string => `Time: Thu Jan 1 00:00:00 1970 aka o0 (oonix time)`
+      exe: (): string => fourOhFour
     },
     {
       name: `bank`,
       description: `your capital, portflio, etc`,
-      exe: (): string => `Time: Thu Jan 1 00:00:00 1970 aka o0 (oonix time)`
+      exe: (): string => fourOhFour
     },
     {
       name: `market`,
       description: `buy and sell anything`,
-      exe: (): string => `Time: Thu Jan 1 00:00:00 1970 aka o0 (oonix time)`
+      exe: (): string => fourOhFour
     },
     {
       name: `hr`,
       description: `human resources`,
-      exe: (): string => `Time: Thu Jan 1 00:00:00 1970 aka o0 (oonix time)`
+      exe: (): string =>  fourOhFour
     },
     {
       name: `kiwifeedia`,
       description: `the best encyclopedia`,
-      exe: (): string => `Time: Thu Jan 1 00:00:00 1970 aka o0 (oonix time)`
+      exe: (): string => fourOhFour
     },
     {
       name: `sleep`,
       description: `go into sleep mode until something interesting happens`,
-      exe: (): string => `Time: Thu Jan 1 00:00:00 1970 aka o0 (oonix time)`
+      exe: (): string => fourOhFour
+    },
+    {
+      name: `telemtry`,
+      description: `analyze telementry`,
+      exe: (): string =>  fourOhFour
+    },
+    {
+      name: `fablab`,
+      description: `We can build anything tha does anything`,
+      exe: (): string =>  fourOhFour
+    },
+    {
+      name: `qup`,
+      description: `upgrade the QBIOS of your QEP. `,
+      exe: (): string => `Warning: corruption of QBIOS will irrevocably decohere the QEP from the QNET.\nWarning: a corrupted QBIOS can't be booted, rendering it's data lost.\nWarning: For real, don't mess this up or it will brick your shit!\n Do you want to continue? Y/n`
+    },
+    {
+      name: `NASTA`,
+      description: `The Ermerican space agency`,
+      exe: (): string =>  fourOhFour
+    },
+    {
+      name: `KKKP`,
+      description: `The Kazakistanian Kosmos KorP`,
+      exe: (): string => fourOhFour
+    },
+    {
+      name: `groundcontrol`,
+      description: `plan and launch a mission`,
+      exe: (): string => fourOhFour
+    },
+    {
+      name: `RD`,
+      description: `Research and Development: a place to build hardware and software`,
+      exe: (): string => fourOhFour
     }
+    
   ]
 };
 
