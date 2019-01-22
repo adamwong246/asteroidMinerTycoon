@@ -6,7 +6,8 @@ module.exports = {
     app: './src/index.js'
   },
   output: {
-    filename: '[name].bundle.js'
+    filename: '[name].bundle.js',
+    path: __dirname
   },
   module: {
     rules: [
