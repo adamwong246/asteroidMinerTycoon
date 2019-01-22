@@ -8,6 +8,11 @@ body {
   color: #777;
 }
 
+pre{
+  white-space: pre-wrap;
+}
+
+
 .loading-stepped {
   animation: loading-stepped 0.75s linear infinite;
 }
