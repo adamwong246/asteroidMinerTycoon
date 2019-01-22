@@ -583,7 +583,15 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-router@^4.4.3":
+"@types/react-router-dom@4.3.1":
+  version "4.3.1"
+  resolved "https://registry.npmjs.org/@types/react-router-dom/-/react-router-dom-4.3.1.tgz#71fe2918f8f60474a891520def40a63997dafe04"
+  dependencies:
+    "@types/history" "*"
+    "@types/react" "*"
+    "@types/react-router" "*"
+
+"@types/react-router@*", "@types/react-router@4.4.3":
   version "4.4.3"
   resolved "https://registry.npmjs.org/@types/react-router/-/react-router-4.4.3.tgz#ea68b4021cb576866f83365b2201411537423d50"
   dependencies:
@@ -3296,7 +3304,7 @@ react-monaco-editor@^0.22.0:
     monaco-editor "^0.15.1"
     prop-types "^15.6.2"
 
-react-router-dom@^4.3.1:
+react-router-dom@4.3.1:
   version "4.3.1"
   resolved "https://registry.npmjs.org/react-router-dom/-/react-router-dom-4.3.1.tgz#4c2619fc24c4fa87c9fd18f4fb4a43fe63fbd5c6"
   dependencies:
