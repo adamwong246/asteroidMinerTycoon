@@ -11,8 +11,10 @@ export module QuomputerTypes {
     content: string;
   }
 
-  export interface FILE_METADATA {
-    name: string;
+  export interface FILE_METADATA_SET {
+    set: [{
+      name: string;
+    }]
   }
 
   export interface ROOT_FOLDER {
@@ -30,8 +32,8 @@ export module QuomputerTypes {
   export interface FILE_SYSTEM {
     name?: string;
     root: ROOT_FOLDER;
-    getData: Function;//Promise<FILE|FOLDER|Error>;
-    getMetadata: Function;
+    // getData: Function;//Promise<FILE|FOLDER|Error>;
+    // getMetadata: Function;
   }
   
   export interface SYSTEM {
