@@ -6,15 +6,13 @@ export module QuomputerTypes {
     exe: Function;
   }
   
+  export interface METAFILE {
+    path: string;
+  }
+
   export interface FILE {
     name: string;
     content: string;
-  }
-
-  export interface FILE_METADATA_SET {
-    set: [{
-      name: string;
-    }]
   }
 
   export interface ROOT_FOLDER {
@@ -31,9 +29,9 @@ export module QuomputerTypes {
   
   export interface FILE_SYSTEM {
     name?: string;
-    root: ROOT_FOLDER;
-    // getData: Function;//Promise<FILE|FOLDER|Error>;
-    // getMetadata: Function;
+    root: FOLDER;
+    metaEntries: Function;
+    entry: Function;
   }
   
   export interface SYSTEM {
@@ -41,20 +39,5 @@ export module QuomputerTypes {
     user: string;
     currentDirectory: FOLDER;
     drive: FILE_SYSTEM;
-    // cpu: CPU;
-    // board: BOARD;
-    // aDrive?: FILE_SYSTEM
-    // qpuSlot?: QPU
-    // kernel: KERNEL;
   }
-  
-  export interface QPU {
-    id: string;
-    nickname: string;
-  }
-  
-  export interface QNET {
-    id: string;
-    qpus: QPU[];
-  };
 };

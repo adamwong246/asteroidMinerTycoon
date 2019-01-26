@@ -13,7 +13,7 @@ function encodeHTML(s) {
 
 class TerminalApp extends React.Component<
   {
-    startupMessages: any[];
+    startupMessages:   any[];
   },
   {
     updating: boolean;

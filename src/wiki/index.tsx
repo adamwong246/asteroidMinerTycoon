@@ -96,15 +96,30 @@ class Wiki extends React.Component<{}, {}> {
           definition: `A HARDWARE IO ßCOMPONENT for holding anything that can fit. It is attached to one or more mount points of a frame, depending on the payload. It may or may not be shielded`
         },
         
-        { word: `landing apparatus`, definition: `A platform for touching down on a world`},
-        { word: `Electrical`, definition: `Power generation, storage, and transmission of zaps`},
+        { word: `Landing system`, definition: `A platform for touching down on a world`},
+        { word: `Electrical system`, definition: `Power generation, storage, and transmission of zaps`},
         { word: `frame`, definition: `A platform for holding everything in place.`},
         { word: `zaps`, definition: `A unit of electricity, eg: "This battery has stored 10 zaps."`},
         { word: `bips`, definition: `A unit of SOFTWARE. eg: "This drive can store 100 bigo-bips"`},
         { word: `ugs`, definition: `A unit of MASS. eg: "This craft has a mass of 9.9 humungo-ugs"`},
         { word: `oofs`, definition: `A unit of FORCE. eg: "This thruster produces 15 teeny-oofs"`},
         { word: `tiks`, definition: `A unit of TIME`},
+        { word: `hots`, definition: `A unit of TEMPERATURE`},
         { word: `Frenchy system`, definition: `Otherwise known as "Système Français" or "SF". A nomenclature for numbers with a high number of decimals. Each suffix correponds to an order of magntitude. -1 is 'itsy', -2 'itstybitsy', 3 is 'humongo', 4 is 'giganto', etc. For example, this modem can transmit 5.5 humungo-bips per itsy-tick `},
+        { word: `unonium`, definition: `The first alchement, composed of a single 'posabit' and a single 'negabit`},
+        { word: `dosium`, definition: `The 2nd alchement, composed of a 2 'posabit's and a 2 'negabit's`},
+        { word: `oxium`, definition: ``},
+        { word: `carbium`, definition: ``},
+        { word: `silicnoium`, definition: ``},
+        { word: `goodium`, definition: ``},
+        { word: `betterium`, definition: ``},
+        { word: `bestium`, definition: ``},
+        { word: `ferium`, definition: ``},
+        { word: `plumbium`, definition: ``},
+        { word: `neonium`, definition: ``},
+        { word: `nukonium`, definition: ``},
+        { word: `posabit`, definition: `a sub-alchemic bit. It has a positive charge`},
+        { word: `negabit`, definition: `a sub-alchemic bit. It has a negative charge`},
       ]
     } as Dictionary;;
 
