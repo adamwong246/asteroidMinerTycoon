@@ -1,7 +1,7 @@
 
 import React from "react";
 
-import TerminalUI from "./ui.tsx";
+import TerminalUI from "./view/ui.tsx";
 import Shell from "./shell.ts";
 
 function encodeHTML(s) {

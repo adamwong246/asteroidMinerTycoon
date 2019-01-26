@@ -1,5 +1,6 @@
-import MESSAGE from "./message";
 import system from "./system.ts";
+
+interface MESSAGE { content: string; type: string; }
 
 const findProgram = (cmd: string): false | Function => {
   const words = cmd.split(` `);

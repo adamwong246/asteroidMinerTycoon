@@ -1,39 +1,31 @@
-html, body {
-  height: 100%;
-}
-
 body {
-  background: #333;
-  font-family: "mono";
-  color: darkgreen;
+  background-color: black;
+  background-image: radial-gradient(
+    rgba(0, 150, 0, 0.75), black 120%
+  );
+  height: 100vh;
+  color: white;
+  font: 1rem Inconsolata, monospace;
+  text-shadow: 0 0 5px black;
 }
 
-pre{
-  white-space: pre-wrap;
+::selection {
+  background: #0080FF;
+  text-shadow: none;
 }
 
-
-.loading-stepped {
-  animation: loading-stepped 0.75s linear infinite;
-}
-
-@keyframes loading-stepped {
-  0%, 16% {
-    transform: rotate(45deg);
-  }
-  17%, 33% {
-    transform: rotate(180deg);
-  }
-  34%,50% {
-    transform: rotate(235deg);
-  }
-  51%,67% {
-    transform: rotate(270deg);
-  }
-  68%,82% {
-    transform: rotate(315deg);
-  }
-  83%, 100% {
-    transform: rotate(360deg);
-  }
-}
+/* body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(black, 0.15),
+    rgba(black, 0.15) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+} */

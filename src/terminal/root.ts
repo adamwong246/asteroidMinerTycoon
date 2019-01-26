@@ -7,7 +7,7 @@ const root: QuomputerTypes.ROOT_FOLDER = {
       content: `
 # ASTEROID MINER TYCOON
 ## Escape From The Planet of the Humans
-v0.0.3
+v0.0.4
         `
     }
   ],
