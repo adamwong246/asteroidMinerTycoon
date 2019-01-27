@@ -4,7 +4,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import Telemtry from "./telemetry/index.tsx";
-import terminal from "./terminal/index.tsx";
+import terminal from "./oonix/index.tsx";
 import awsim from "./awsim/index.tsx";
 import Rd from "./RandD/index.tsx";
 import Wiki from "./wiki/index.tsx";

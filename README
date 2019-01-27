@@ -1,5 +1,10 @@
 # README
 ## Asteroid Miner Tycoon
+### Escape from Planet of the Humans
+
+v0.0.5
+
+a FOSS computer game
 
 demo: https://adamwong246.github.io/asteroidMinerTycoon/index.html
 
@@ -18,4 +23,5 @@ npm run build
 and
 then drag into nw.js
 
-
+# LICENSE
+GPL for now
