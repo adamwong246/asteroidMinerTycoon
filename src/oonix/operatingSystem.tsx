@@ -90,7 +90,7 @@ ${OoonixSystem.user}:   active
       description: `read a file to the screen`,
       exe: (...args): any => {
         if (args[0].length === 0) {
-          return `the 'read' program requires at least 1 argument\n eg: "read README"`;
+          return `the 'read' program requires at least 1 argument\n eg: "read README.txt"`;
         } else {
           return (<pre><output>{OoonixSystem.drive.entry(args[0][0]).content}</output></pre>);
         }

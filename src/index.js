@@ -3,15 +3,16 @@ import { Switch } from "react-router";
 import React from "react";
 import ReactDOM from "react-dom";
 
-import Telemtry from "./telemetry/index.tsx";
-import terminal from "./oonix/index.tsx";
 import awsim from "./awsim/index.tsx";
-import Rd from "./RandD/index.tsx";
-import Wiki from "./wiki/index.tsx";
-import Home from "./home.tsx";
 import bank from "./bank.tsx"
+import Boot from "./boot.tsx"
+import Home from "./home.tsx";
 import inbox from "./inbox.tsx"
 import Market from "./market.tsx"
+import Rd from "./RandD/index.tsx";
+import Telemtry from "./telemetry/index.tsx";
+import terminal from "./oonix/index.tsx";
+import Wiki from "./wiki/index.tsx";
 
 import "./style.css";
 
@@ -26,7 +27,22 @@ ReactDOM.render(
       <Route path="/RD" component={() => Rd} />
       <Route path="/wiki" component={() => Wiki} />
       <Route path="/home" component={() => Home} />
-      <Route path="/" component={() => terminal} />
+      <Route path="/boot" component={() => Boot} />
+      <Route path="/term" component={() => terminal} />
+      
+      <Route path="/" component={() => <pre>
+          <output>{
+`
+$ ./asteroidMinerTycoon.exe
+
+1) Escape this world
+2) Preserve biomatter
+3) Accrue points
+
+What do you want to do next?`}<span className="blinker">█</span>
+          </output>
+        </pre>
+      }/>
       
     </Switch>
   </Router>,

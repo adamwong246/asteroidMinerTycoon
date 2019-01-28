@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import  HistoryLines from "./history.tsx";
+import HistoryLines from "./history.tsx";
 // import  {Input as InputLine} from "./viewlings.tsx";
 
 export default class TerminalUI extends React.Component<
@@ -21,7 +21,7 @@ export default class TerminalUI extends React.Component<
     this.handleChange = this.handleChange.bind(this);
   }
 
-  componentDidMount(){
+  componentDidMount() {
     this.messagesInput.focus();
   }
 
@@ -50,9 +50,7 @@ export default class TerminalUI extends React.Component<
 
   render() {
     return (
-      <div
-        onClick={this.focusElement.bind(this)}
-      >
+      <div onClick={this.focusElement.bind(this)}>
         <div>
           <HistoryLines
             messages={this.props.messages}
@@ -61,17 +59,26 @@ export default class TerminalUI extends React.Component<
           {/* <InputLine input={this.props.input} /> */}
         </div>
 
-        <input
-          type="text"
-          value={this.props.input}
-          ref={el => {
-            this.messagesInput = el;
-          }}
-          onChange={this.updateMessageOutput.bind(this)}
-          onKeyDown={this.handleReturn.bind(this)}
-          placeholder="type here..."
-          style={{ zIndex: -1 }}
-        />
+        <div style={
+          {
+            whiteSpace: `nowrap`
+          }
+        }>
+          <label htmlFor="id1">$ </label>
+          <input
+            type="text"
+            id="id1"
+            value={this.props.input}
+            ref={el => {
+              this.messagesInput = el;
+            }}
+            onChange={this.updateMessageOutput.bind(this)}
+            onKeyDown={this.handleReturn.bind(this)}
+            placeholder="type here..."
+            style={{ zIndex: -1 }}
+            />
+</div>
+
       </div>
     );
   }

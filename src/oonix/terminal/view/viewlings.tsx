@@ -7,7 +7,7 @@ export const Command: React.SFC<{
 }> = props => {
   return (
     <section>
-      <hr></hr>
+      {/* <hr></hr> */}
       {`>`} {props.message}
     </section>
   );
@@ -16,7 +16,7 @@ export const Command: React.SFC<{
 export const Error: React.SFC<{
   message: string;
 }> = props => {
-  return <p>'{props.message}' command not found. (try 'utils')</p>;
+  return <p>'{props.message}' command not found. (try 'help')</p>;
 };
 
 export const Message: React.SFC<{}> = props => {
