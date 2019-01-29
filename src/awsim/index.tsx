@@ -28,11 +28,7 @@ class Awsim extends React.Component<{}, {
     };
     return (
       <div>
-        <h2>Welcome to aweSim</h2>
-        <p>
-          Here at aweSim, we can simluate any physical system within the realms of known computability. Just send us your simRom and some credits, and we'll mathemticlly simulate your experiment on our farm of GPUS, simulating as far into the future as you can afford. Remember, at aweSim you *can* see into the future- for the right price!
-        </p>
-
+        <h2>awSim</h2>
         <MonacoEditor
         width="800"
         height="600"
@@ -40,6 +36,7 @@ class Awsim extends React.Component<{}, {
         theme="vs-dark"
         value={code}
         options={options}
+        miniMap={false}
         // onChange={::this.onChange}
         // editorDidMount={::this.editorDidMount}
       />

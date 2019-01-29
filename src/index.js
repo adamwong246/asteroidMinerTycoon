@@ -26,24 +26,24 @@ ReactDOM.render(
       <Route path="/awsim" component={() => awsim} />
       <Route path="/RD" component={() => Rd} />
       <Route path="/wiki" component={() => Wiki} />
-      <Route path="/home" component={() => Home} />
       <Route path="/boot" component={() => Boot} />
-      <Route path="/term" component={() => terminal} />
+      <Route path="/terminal" component={() => terminal} />
       
-      <Route path="/" component={() => <pre>
+      <Route path="/teaser" component={() => <pre>
           <output>{
 `
 $ ./asteroidMinerTycoon.exe
 
-1) Escape this world
-2) Preserve biomatter
-3) Accrue points
+a) Escape this planet
+b) Preserve biomatter
+c) Accrue points
 
 What do you want to do next?`}<span className="blinker">█</span>
           </output>
         </pre>
       }/>
       
+      <Route path="/" component={() => Home} />
     </Switch>
   </Router>,
   document.getElementById("root")

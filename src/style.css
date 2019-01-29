@@ -4,7 +4,7 @@ body {
   color: green;
   font: 1rem Inconsolata, monospace;
   text-shadow: 0 0 5px black;
-  width: 80rem;
+  width: 40rem;
 }
 
 ::selection {
@@ -47,9 +47,6 @@ input[type="text"]:focus {
   background-color: black;
   border: 1px solid lightgreen;
 }
-
-
-
 
 .blinker { 
   animation-name: blinker;
