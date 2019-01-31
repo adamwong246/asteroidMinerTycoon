@@ -9,7 +9,8 @@ class Home extends React.Component<{}, {}> {
   render() {
     return (
       <div>
-        <ul>
+        <h1>Asteroid Miner Tycoon</h1>
+        {/* <ul>
           <li>
             <Link to="/"> Home </Link>
           </li>
@@ -37,7 +38,7 @@ class Home extends React.Component<{}, {}> {
           <li>
             <Link to="/bank"> bank </Link>
           </li>
-        </ul>
+        </ul> */}
       </div>
     );
   }

@@ -1,12 +1,27 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <title>Quine Ind.</title>
+    <meta charset="UTF-8" />
   </head>
   <body>
-    <a href="/"><h1>Asteroid Miner Tycoon</h1></a>
+    <!-- All of the Node.js APIs are available in this renderer process. -->
+    We are using Node.js
+    <script>
+      document.write(process.versions.node);</script
+    >, Chromium
+    <script>
+      document.write(process.versions.chrome);</script
+    >, and Electron
+    <script>
+      document.write(process.versions.electron);</script
+    >.
+
+    <script>
+      // You can also require other files to run in this process
+      require("./renderer.js");
+    </script>
+
     <div id="root"></div>
     <script src="app.bundle.js"></script>
   </body>
 </html>
-
