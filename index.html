@@ -22,6 +22,24 @@
     </script>
 
     <div id="root"></div>
-    <script src="app.bundle.js"></script>
+    <!-- <script src="app.bundle.js"></script> -->
+    <!-- <script>
+      require("./app.bundle.js");
+    </script> -->
+
+    <hr>
+    <textarea rows="20" cols="90" id="command-output" disabled="true"></textarea>
+    <div id="status"></div>
+    <hr>
+    
+    <script src="./gui-funct.js"></script>
+    <script>
+        // GLUE to the screen
+        function getCommandOutput() { return document.getElementById("command-output");  };
+        function getStatus()      { return document.getElementById("status");  };
+        // End of GLUE
+        backgroundProcess();
+    </script>
+
   </body>
 </html>
