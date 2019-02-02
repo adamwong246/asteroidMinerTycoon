@@ -6,7 +6,17 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron .",
+    
+    "start:boot": "electron boot",
+    "start:ide": "electron ide",
+    "start:physics": "electron physics",
+    "start:terminal": "electron terminal",
+    "start:bank": "electron bank",
+    "start:market": "electron market",
+    "start:fakebook": "electron fakebook",
+    "start:inbox": "electron inbox",
+    "start:news": "electron news",
+    
     "dev:build": "webpack --config webpack.config.js",
     "dev:run": "webpack-dev-server --open --hot",
     "dev:watch": "webpack --watch"

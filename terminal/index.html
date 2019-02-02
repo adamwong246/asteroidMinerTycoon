@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <!-- All of the Node.js APIs are available in this renderer process. -->
+    We are using Node.js
+    <script>
+      document.write(process.versions.node);</script
+    >, Chromium
+    <script>
+      document.write(process.versions.chrome);</script
+    >, and Electron
+    <script>
+      document.write(process.versions.electron);</script
+    >.
+
+    <script>
+      // You can also require other files to run in this process
+      require("./renderer.js");
+    </script>
+
+    <div id="root"></div>
+    <!-- <script src="app.bundle.js"></script> -->
+    <!-- <script>
+      require("./app.bundle.js");
+    </script> -->
+
+    <hr>
+    <textarea rows="20" cols="90" id="command-output" disabled="true"></textarea>
+    <div id="status"></div>
+    <hr>
+    
+    <script src="./gui-funct.js"></script>
+    <script>
+        // GLUE to the screen
+        function getCommandOutput() { return document.getElementById("command-output");  };
+        function getStatus()      { return document.getElementById("status");  };
+        // End of GLUE
+        backgroundProcess();
+    </script>
+
+  </body>
+</html>

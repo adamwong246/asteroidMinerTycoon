@@ -1,0 +1,66 @@
+body {
+  background-color: black;
+  height: 100vh;
+  color: green;
+  font: 1rem Inconsolata, monospace;
+  text-shadow: 0 0 5px black;
+  width: 40rem;
+}
+
+::selection {
+  background: #0080ff;
+  text-shadow: none;
+}
+
+input {
+  width: 100%;
+}
+
+th,
+td {
+  padding-right: 2rem;
+  border: 1px dotted green;
+}
+
+th {
+  text-align: center;
+  background-color: darkgreen;
+  color: lightgreen;
+}
+td {
+  text-align: left;
+}
+
+input[type="text"] {
+  background-color: black;
+  border: 1px solid darkgreen;
+  color: lightgreen;
+  font: 0.8rem Inconsolata, monospace;
+}
+
+input[type="text"]::placeholder {
+  color: green;
+}
+
+input[type="text"]:focus {
+  outline: lightgreen;
+  background-color: black;
+  border: 1px solid lightgreen;
+}
+
+.blinker { 
+  animation-name: blinker;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(1,0,0,1);
+  animation-duration: 1s;
+  display: inline-block;
+  width: 8px;
+  height: 100px;
+  margin-left: 10px;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(white,.3);
+}
+
+@keyframes blinker { 
+  from { opacity: 1.0; } to { opacity: 0.0; }
+}

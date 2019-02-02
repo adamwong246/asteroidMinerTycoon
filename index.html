@@ -2,44 +2,46 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <title>Quine Ind.</title>
+
+    <style>
+      body {
+        background-color: black;
+        color: green;
+      }
+
+      .blinker {
+        animation-name: blinker;
+        animation-iteration-count: infinite;
+        animation-timing-function: cubic-bezier(1, 0, 0, 1);
+        animation-duration: 1s;
+        display: inline-block;
+        width: 8px;
+        height: 100px;
+        margin-left: 0px;
+        border-radius: 3px;
+        box-shadow: 0 0 10px rgba(white, 0.3);
+      }
+
+      @keyframes blinker {
+        from {
+          opacity: 1;
+        }
+        to {
+          opacity: 0;
+        }
+      }
+    </style>
   </head>
   <body>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js
-    <script>
-      document.write(process.versions.node);</script
-    >, Chromium
-    <script>
-      document.write(process.versions.chrome);</script
-    >, and Electron
-    <script>
-      document.write(process.versions.electron);</script
-    >.
+    <pre><output>
+$ ./asteroidMinerTycoon -h
+  A computer game with the following objectives: 
+  - Accrue points
+  - Preserve biomatter
+  - Escape this world
 
-    <script>
-      // You can also require other files to run in this process
-      require("./renderer.js");
-    </script>
-
-    <div id="root"></div>
-    <!-- <script src="app.bundle.js"></script> -->
-    <!-- <script>
-      require("./app.bundle.js");
-    </script> -->
-
-    <hr>
-    <textarea rows="20" cols="90" id="command-output" disabled="true"></textarea>
-    <div id="status"></div>
-    <hr>
-    
-    <script src="./gui-funct.js"></script>
-    <script>
-        // GLUE to the screen
-        function getCommandOutput() { return document.getElementById("command-output");  };
-        function getStatus()      { return document.getElementById("status");  };
-        // End of GLUE
-        backgroundProcess();
-    </script>
-
+$ ./asteroidMinerTycoon.exe
+loading... <span class="blinker">█</span></output></pre>
   </body>
 </html>
